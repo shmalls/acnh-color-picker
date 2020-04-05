@@ -40,9 +40,12 @@ class ColorPicker extends React.Component {
       if(shortestDistance === null || distance < shortestDistance) {
         shortestDistance = distance;
         index = i;
+
+        if(shortestDistance === 0) {
+          break;
+        }
       }
     }
-    console.log(shortestDistance)
     return index
   }
 
