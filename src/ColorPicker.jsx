@@ -3,9 +3,8 @@ import { ChromePicker } from 'react-color';
 import { colors } from './colors';
 
 import display from './assets/intro.jpg';
-import logo from './assets/logo-acnh-en.png'
 
-import './ColorPicker.css'
+import './css/ColorPicker.css'
 
 class ColorPicker extends React.Component {
   constructor(props) {
@@ -62,12 +61,6 @@ class ColorPicker extends React.Component {
   render() {
     return (
       <>
-        <div className="title">
-          <img src={logo} className="title-image" />
-          <div className="title-text">
-            COLOR PICKER TOOL
-          </div>
-        </div>
         <div className="main">
           <img src={this.state.current_index === null ? display : require("./" + colors[this.state.current_index].file_location)} className="display" />
           <div className="selector">

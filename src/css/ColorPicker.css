@@ -1,0 +1,14 @@
+.main {
+  display:flex;
+}
+
+.display {
+  max-width: 60%;
+  height: auto;
+}
+.values{
+  text-align: left;
+}
+
+.selector {
+}
